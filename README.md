@@ -16,8 +16,7 @@ Setup
 1. Create a new app on Parse, and make sure you go
 through the [installation section for Cloud Code](https://parse.com/docs/cloud_code_guide#started-installing).
 
-2. Type `parse new .` in the directory where this
-README resides, authenticate with your Parse credentials,
+2. Set the "parse" subdirectory of the project to be the current directory and type `parse new .`, authenticate with your Parse credentials,
 and choose the app name you created.
 
 3. Delete `public/index.html`
