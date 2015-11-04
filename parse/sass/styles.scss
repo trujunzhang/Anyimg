@@ -2,6 +2,12 @@
 @import "compass/css3";
 @import "compass/utilities";
 
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700,300);
+$font-family-base: 'Raleway', sans-serif;
+// Import bootstrap and fontawesome
+@import "bootstrap";
+@import "font-awesome";
+
 $back: #21272E;
 $textColor: white;
 

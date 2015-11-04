@@ -4,6 +4,6 @@
   "dependencies": {
     "bootstrap": "latest",
     "font-awesome": "latest",
-    "animate.css": "latest",
+    "animate.css": "latest"
   }
 }
