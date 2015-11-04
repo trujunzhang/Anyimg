@@ -18,6 +18,11 @@ gulp.task('icons', function() {
         .pipe(gulp.dest('./parse/public/fonts'));
 });
 
+gulp.task('custom.css', function() {
+    return gulp.src('./parse/sass/**.css')
+        .pipe(gulp.dest('./parse/public/stylesheets'));
+});
+
 gulp.task('fontawesome.css', function() {
     return gulp.src(config.bowerDir + '/fontawesome/css/font-awesome.min.*')
         .pipe(gulp.dest('./parse/public/stylesheets'));
@@ -53,4 +58,4 @@ gulp.task('watch', function() {
     gulp.watch(config.sassPath + '/**/*.scss', ['css']);
 });
 
-gulp.task('default', ['bower', 'icons', 'bootstrap.css','bootstrap.js','fontawesome.css']);
+gulp.task('default', ['bower', 'icons', 'bootstrap.css','bootstrap.js','fontawesome.css','custom.css']);
