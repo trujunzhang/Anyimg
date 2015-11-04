@@ -1,0 +1,9 @@
+{
+  "name": "IEATTA-Express",
+  "version": "1.0.0",
+  "dependencies": {
+    "bootstrap": "latest",
+    "font-awesome": "latest",
+    "animate.css": "latest",
+  }
+}
