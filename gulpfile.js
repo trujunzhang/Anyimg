@@ -15,17 +15,17 @@ gulp.task('bower', function() {
 
 gulp.task('icons', function() {
     return gulp.src(config.bowerDir + '/fontawesome/fonts/**.*')
-        .pipe(gulp.dest('./public/fonts'));
+        .pipe(gulp.dest('./parse/public/fonts'));
 });
 
 gulp.task('bootstrap.css', function() {
     return gulp.src(config.bowerDir + '/bootstrap/dist/css/bootstrap.*')
-        .pipe(gulp.dest('./public/stylesheets'));
+        .pipe(gulp.dest('./parse/public/stylesheets'));
 });
 
 gulp.task('bootstrap.js', function() {
     return gulp.src(config.bowerDir + '/bootstrap/dist/js/bootstrap.**.*')
-        .pipe(gulp.dest('./public/javascripts/bootstrap'));
+        .pipe(gulp.dest('./parse/public/javascripts/bootstrap'));
 });
 
 gulp.task('css', function() {
@@ -40,7 +40,7 @@ gulp.task('css', function() {
             .on("error", notify.onError(function (error) {
                 return "Error: " + error.message;
             })))
-        .pipe(gulp.dest('./public/stylesheets'));
+        .pipe(gulp.dest('./parse/public/stylesheets'));
 });
 
 // Rerun the task when a file changes
