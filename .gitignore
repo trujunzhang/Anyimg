@@ -92,3 +92,7 @@ parse/public/libs
 parse/public/fonts
 
 parse/.codekit-cache
+
+parse/public/javascripts/bootstrap
+
+components

@@ -4,7 +4,7 @@ notify = require("gulp-notify"),
 bower = require('gulp-bower');
 
 var config = {
-    sassPath: './public/sass',
+    sassPath: './sass',
     bowerDir: './public/libs'
 }
 
@@ -18,14 +18,23 @@ gulp.task('icons', function() {
         .pipe(gulp.dest('./public/fonts'));
 });
 
+gulp.task('bootstrap.css', function() {
+    return gulp.src(config.bowerDir + '/bootstrap/dist/css/bootstrap.*')
+        .pipe(gulp.dest('./public/stylesheets'));
+});
+
+gulp.task('bootstrap.js', function() {
+    return gulp.src(config.bowerDir + '/bootstrap/dist/js/bootstrap.**.*')
+        .pipe(gulp.dest('./public/javascripts/bootstrap'));
+});
+
 gulp.task('css', function() {
     return gulp.src(config.sassPath + '/style.scss')
         .pipe(sass({
             style: 'compressed',
             loadPath: [
-                './public/sass',
                 config.bowerDir + '/bootstrap-sass-official/assets/stylesheets',
-                config.bowerDir + '/fontawesome/scss',
+                config.bowerDir + '/fontawesome/scss'
             ]
         })
             .on("error", notify.onError(function (error) {
@@ -39,4 +48,4 @@ gulp.task('watch', function() {
     gulp.watch(config.sassPath + '/**/*.scss', ['css']);
 });
 
-gulp.task('default', ['bower', 'icons', 'css']);
+gulp.task('default', ['bower', 'icons', 'bootstrap.css','bootstrap.js']);

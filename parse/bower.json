@@ -5,6 +5,7 @@
     "TrujunZhang <trujunzhang@gmail.com>"
   ],
   "dependencies": {
+    "bootstrap": "latest",
     "bootstrap-sass-official": "~3.3.3",
     "fontawesome": "~4.3.0",
     "animate.css": "latest"
