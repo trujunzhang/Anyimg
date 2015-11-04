@@ -1,9 +1,12 @@
 {
   "name": "IEATTA-Express",
   "version": "1.0.0",
+  "authors": [
+    "TrujunZhang <trujunzhang@gmail.com>"
+  ],
   "dependencies": {
-    "bootstrap-sass": "latest",
-    "font-awesome": "latest",
+    "bootstrap-sass-official": "~3.3.3",
+    "fontawesome": "~4.3.0",
     "animate.css": "latest"
   }
 }

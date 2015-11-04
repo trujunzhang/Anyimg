@@ -4,7 +4,7 @@ notify = require("gulp-notify"),
 bower = require('gulp-bower');
 
 var config = {
-    sassPath: './sass',
+    sassPath: './public/sass',
     bowerDir: './public/libs'
 }
 
@@ -23,9 +23,9 @@ gulp.task('css', function() {
         .pipe(sass({
             style: 'compressed',
             loadPath: [
-                './sass',
-                config.bowerDir + '/bootstrap-sass/assets/stylesheets',
-                config.bowerDir + '/font-awesome/scss',
+                './public/sass',
+                config.bowerDir + '/bootstrap-sass-official/assets/stylesheets',
+                config.bowerDir + '/fontawesome/scss',
             ]
         })
             .on("error", notify.onError(function (error) {

@@ -89,5 +89,6 @@ dist/
 
 parse/public/stylesheets
 parse/public/libs
+parse/public/fonts
 
 parse/.codekit-cache
