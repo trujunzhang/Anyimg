@@ -2,6 +2,7 @@
   "name": "IEATTA-Express",
   "version": "0.0.1",
   "private": true,
+  "license": "MIT",
   "devDependencies": {
     "gulp": "^3.8.11",
     "gulp-bower": "0.0.10",

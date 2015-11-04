@@ -24,8 +24,8 @@ gulp.task('css', function() {
             style: 'compressed',
             loadPath: [
                 './sass',
-                config.bowerDir + '/bootstrap-sass-official/assets/stylesheets',
-                config.bowerDir + '/fontawesome/scss',
+                config.bowerDir + '/bootstrap-sass/assets/stylesheets',
+                config.bowerDir + '/font-awesome/scss',
             ]
         })
             .on("error", notify.onError(function (error) {
