@@ -18,6 +18,7 @@
       <link href="/stylesheets/styles.css" rel="stylesheet" type="text/css" />
       <link href="/stylesheets/bootstrap.css" rel="stylesheet" type="text/css" />
       <link href="/stylesheets/font-awesome.min.css" rel="stylesheet" type="text/css" />
+      <link href="/stylesheets/simple-sidebar.css" rel="stylesheet" type="text/css" />
 
       <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
       <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -30,30 +31,6 @@
 
   <body>
     <div id="content">
-      <div id="bar">
-        <a class="logo" href="/">
-          <h1>AnyImg</h1>
-        </a>
-
-        <ul class="right">
-        <% if (!Parse.User.current()) { %>
-          <li>
-            <a href="/">Share an image</a>
-            | <a href="/i/latest">Latest</a>
-            | <a href="/login">Login</a>
-            | <a href="/signup">Signup</a>
-          </li>
-        <% } else { %>
-          <li>
-            <a href="/i/mine"><%= Parse.User.current().get('username') %></a>
-            | <a href="/">Share an image</a>
-            | <form action="/logout" method="post">
-              <a href="#" data-action="post">Logout</a>
-            </form>
-          </li>
-        <% } %>
-        </ul>
-      </div>
 
       <div id="main">
         <% if (locals.flash) { %>
@@ -62,6 +39,7 @@
 
         <%- body %>
       </div>
+
     </div>
   </body>
 </html>
