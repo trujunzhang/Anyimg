@@ -1,0 +1,10 @@
+{
+  "applications": {
+    "Anyimg": {
+      "applicationId": "joVQqtFFTe2qcSKC1YOqaoLLWpjZ8ZDkEevpuVMp"
+    },
+    "_default": {
+      "link": "Anyimg"
+    }
+  }
+}
